@@ -30,9 +30,8 @@ public class AppController {
 
         // we get path variable in format like this 10*10 and then extract data first and second number to do calculation
         int ch = str.indexOf("*");
-        int ch2 = str.indexOf("}");
         int firstNum = Integer.parseInt(str.substring(0, ch));
-        int secondNum = Integer.parseInt(str.substring(ch + 1, ch2));
+        int secondNum = Integer.parseInt(str.substring(ch + 1));
         int result = firstNum * secondNum;
 
         // we then create calculator object with data that was sent and save it in database
